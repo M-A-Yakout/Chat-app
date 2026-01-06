@@ -1,0 +1,463 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: white;
+    overflow: hidden;
+}
+
+.walls{
+    display: flex;
+}
+
+.wall-pink{
+    content: ""; 
+    background:linear-gradient(hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    border-bottom-left-radius: 50% 30%;
+    border-bottom-right-radius: 50% 30%;
+    position: relative;
+    right: 30px;
+    height: 90vh;
+    width: 24vw;
+    z-index: -1;
+}
+
+.shadow{
+    position:sticky;
+    content: "";
+    width: 30vw;
+    height: 90vh;
+    margin-top: 300px;
+    border-top-left-radius: 100% 60%;
+    opacity: 0.1;
+    margin-left: auto;
+    background-color: hsl(293, 100%, 63%);
+}
+
+.ios{
+    display: block;
+    position: absolute;
+    left: 300px;
+    margin-top: 90px;
+    content: "";
+    background:none;
+    height: 70vh;
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 1px 0px 20px 0px #a5a1a1;
+}
+
+.bar{
+    position: absolute;
+    background-color: white;
+    border: 10px solid white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 8vw;
+    height: 1vh;
+    left: 85px;
+}
+
+.menu{
+    background: linear-gradient(hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    width: auto;
+    height: 10vh;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+.chat{
+    position: relative;
+    background-color: hsl(270, 20%, 96%);
+    height: 60vh;
+    width: auto;
+    z-index: -1;
+    overflow: hidden;
+    margin-top: 0s;
+    margin-bottom: 0;
+}
+
+.text-box{
+    display: block;
+    border: 10px solid white;
+    height: 2vh;
+    width: 14vw;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    top: 5%;
+    left: 2%;
+}
+
+.text-box::placeholder {
+    color: hsl(206, 6%, 79%); 
+    opacity: 0.7;
+}
+
+.chat .send-icon{
+    height: 3.5vh;
+    width: 15vw;
+    position: relative;
+    bottom: 1%;
+    left: 143px;
+}
+
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 25px;
+    padding-left: 5px;
+    margin-right: 100px;
+    white-space: nowrap;
+}
+
+.profile img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 10px;
+}
+
+.menu p{
+    text-align: center;
+    opacity: 0.5;
+    color: hsl(270, 20%, 96%);
+}
+.menu h3{
+    color: white;
+}
+
+
+
+.msg1{
+    display: flex;
+    width: fit-content;
+    background-color: hsl(272, 41%, 93%);
+    margin-top: 10px;
+    margin-left: 10px;
+    color: hsl(276, 55%, 52%);
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+    border-bottom-left-radius: 10%;
+}
+
+.msg2{
+    display: flex;
+    width: fit-content;
+    background-color: hsl(272, 41%, 93%);
+    margin-top: 20px;
+    margin-left: 10px;
+    color: hsl(276, 55%, 52%);
+    border-radius: 20px;
+    padding: 10px;
+    border-bottom-left-radius: 10%;
+}
+
+.msg3{
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+    margin-right: 10px;
+    justify-content: flex-end;
+}
+
+.msg3 img{
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+
+.msg4{
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 5px;
+    justify-content: flex-end;
+    width: fit-content;
+    color: hsl(278, 10%, 49%);
+    border-radius: 20px;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15));
+    padding: 10px;
+    border-bottom-right-radius: 10%;
+}
+
+.msg5{
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 20px;
+    margin-left: 56%;
+    margin-right: auto;
+    justify-content: flex-end;
+    width: fit-content;
+    color: hsl(278, 10%, 49%);
+    border-radius: 20px;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15));
+    padding: 10px;
+    border-bottom-right-radius: 10%;
+}
+
+.msg6{
+    display: flex;
+    width: fit-content;
+    background-color: hsl(272, 41%, 93%);
+    margin-top: 20px;
+    margin-left: 10px;
+    color: hsl(276, 55%, 52%);
+    border-radius: 20px;
+    padding: 10px;
+    border-bottom-left-radius: 10%;
+    
+}
+
+
+.msg7{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: fit-content;
+    background: linear-gradient(to left,hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    margin-top: 20px;
+    margin-left: 10px;
+    color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding: 10px;
+    white-space: nowrap;
+    border-bottom-left-radius: 10%;
+}
+
+.msg7 h2{ 
+    display: flex;
+    margin-left: 90px;
+    align-items: center;
+}
+
+.msg7 span{
+    background-color: transparent;
+}
+
+#circle{
+    width: 15px;
+    height: 15px;
+    border: 2px solid hsl(289, 100%, 72%);
+    border-radius: 50%;
+}
+
+
+.msg8{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: fit-content;
+    background: linear-gradient(to left,hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    margin-top: 20px;
+    margin-left: 10px;
+    color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding: 10px;
+    white-space: nowrap;
+    border-bottom-left-radius: 10%;
+}
+
+.msg8 h2{ 
+    display: flex;
+    margin-left: 113px;
+    align-items: center;
+}
+
+.msg8 span{
+    background-color: transparent;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    position: relative;
+    top: -150px;
+}
+
+
+.hero-text h1{
+    color: hsl(264, 82%, 30%);
+}
+
+.hero-text p{
+    color: gray;
+}
+
+@media (max-width:1679px) and (min-width:1000px){
+   
+     
+    .text-box{
+        top: 20px;
+        transform: translateX(7%);
+        width: 20vw;
+        margin-left: 30px;    
+        max-width: 230px; 
+    }
+    .send-icon{
+        top: -20px;
+        transform: translateX(40px);
+    }
+
+}
+
+@media (max-width:1029px) and (min-width:800px){
+    .ios{
+        transform: translateX(-30%);
+    }
+        
+    .text-box{
+        top: 20px;
+        transform: translateX(7%);
+        width: 20vw;
+        margin-left: 30px;
+        
+    }
+    .send-icon{
+        top: -20px;
+        transform: translateX(40px);
+    }
+}
+
+@media (max-width:1680px) and (min-width:0px){
+   
+    .hero-text {
+        text-align: center;
+        margin-top: -98px; 
+        margin-right: -100px;
+        transform: translateY(40%); 
+        font-size: 80%;
+    }
+    
+    
+    .bar{
+        min-width: 100px; 
+        transform: translateX(10%);
+        height: 0.1px;
+    }
+
+      
+    .chat{
+        height: auto;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+}
+
+@media (max-width: 709px) {
+
+       
+    .wall-pink{
+        position: absolute;
+        right: 50%;
+        width: 100%;
+        height: 60vh;
+    }
+
+    .ios{
+        transform: translateX(-45%);
+        top: 10px;
+        height: auto;
+        background-color: white;
+    }
+
+    
+    .text-box{
+        top: 20px;
+        transform: translateX(5%);
+        min-width: 250px;
+        
+    }
+    .send-icon{
+        top: -20px;
+        transform: translateX(-5px);
+        min-width: 250px;
+    }
+
+}
+
+
+@media (max-width: 590px) and (min-width:0px) {
+    .ios{
+        transform: translateX(-75%);
+        top: 10px;
+        height: auto;
+        background-color: white;
+        top: -70px;
+    }
+
+    .msg1, .msg2,.msg3,.msg4, .msg5,.msg7,.msg8{
+        height: 25px;
+        font-size: small;
+    }
+
+    .msg3 img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .msg4{
+        height: 40px;
+        margin-top: 30px;
+    }
+
+    .menu{
+        height: 75px;
+    }
+
+
+    .bar{
+        min-width: 100px; 
+        transform: translateX(10%);
+        height: 0.1px;
+    }
+
+    .text-box{
+        top: 20px;
+        transform: translateX(10%);
+        min-width: 200px;
+        
+    }
+    .send-icon{
+        top: -15px;
+        transform: translateX(-32px);
+        min-width: 230px;
+    }
+   
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        position: relative;  
+        top: -525px;
+        left: 100px;
+
+    }
+
+    .shadow{
+        position:sticky;
+        content: "";
+        width: 90vw;
+        height: 90vh;
+        margin-top: 676px;
+        border-top-left-radius: 100% 60%;
+        opacity: 0.1;
+        margin-left: auto;
+        background-color: hsl(293, 100%, 63%);
+    }
+
+}
