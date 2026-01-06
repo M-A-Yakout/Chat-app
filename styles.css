@@ -333,7 +333,7 @@ body{
     }
 }
 
-@media (max-width:1680px) and (min-width:0px){
+@media (max-width:1680px) and (min-width:359px){
    
     .hero-text {
         text-align: center;
@@ -440,16 +440,20 @@ body{
    
     .hero-text{
         display: flex;
+        align-items: center;
         flex-direction: column;
         justify-content: center;
-        margin-left: auto;
+        margin-left: -130px;
         position: relative;  
         top: -525px;
+        white-space: nowrap;
         left: 200px;
 
     }
 
     .shadow{
+        display: inline-block;
+        align-items: center;
         position:sticky;
         content: "";
         width: 90vw;
